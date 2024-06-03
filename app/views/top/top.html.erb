@@ -1,0 +1,62 @@
+<div class="navbar">
+  <div class="navbar-start">
+  </div>
+  <div class="navbar-center">
+  </div>
+  <div class="navbar-end space-x-2">
+    <a href="https://x.com/QiitafromRUNTEQ" class="btn btn-neutral">
+      <%= image_tag 'x.png', style: 'height: 36px; width: 36px;' %>
+    </a>
+    <button class="btn btn-neutral">
+      <%= image_tag 'github.png', style: 'height: 36px; width: 36px;' %>
+      GitHub Login
+    </button>
+  </div>
+</div>
+
+<div class="mx-auto bg-white dark:bg-gray-900 shadow sm:rounded-lg p-6">
+  <div class="text-center mb-8">
+    <h1 class="text-5xl font-extrabold text-green-600 dark:text-green-400 mb-4">らんてくん おすすめ記事</h1>
+    <p class="text-xl text-gray-700 dark:text-gray-300">RUNTEQ生(現役/卒業)の高評価なQiita記事を発信するX botです</p>
+  </div>
+  <div class="text-3xl font-semibold text-gray-800 dark:text-gray-200 text-center mb-4">ねらい</div>
+  <div class="flex justify-center">
+    <div class="flex flex-col lg:flex-row lg:gap-8 mb-8">
+      <div class="bg-base-300 dark:bg-gray-700 rounded-box p-4">
+        <h3 class="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-4">1. 技術記事がもっと身近になるように</h3>
+        <ul class="list-disc ml-6 text-base text-gray-600 dark:text-gray-400 space-y-2">
+          <li>知っている人の記事が流れてくることで、読むきっかけをつくる</li>
+          <li>読む習慣ができることで、技術記事を書くハードルを下げる</li>
+        </ul>
+      </div>
+      <div class="bg-base-300 dark:bg-gray-700 rounded-box p-4">
+        <h3 class="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-4">2. 過去バズった高評価記事がまた注目される</h3>
+        <ul class="list-disc ml-6 text-base text-gray-600 dark:text-gray-400 space-y-2">
+          <li>人目につかなくなった良記事が知られるきっかけになる</li>
+          <li>書く人のモチベーションに繋がる</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="text-center p-6">
+    <button class="btn btn-neutral ml-4">
+      <%= image_tag 'github.png', style: 'height: 36px; width: 36px;' %>
+      GitHub Login
+    </button>
+  </div>
+  <div class="text-center">
+    <p class="text-base text-gray-700 dark:text-gray-300">※<%= link_to 'runteq-students', 'https://github.com/orgs/runteq/teams/runteq-students', class: 'underline' %>に属するRUNTEQ生のみがログインできます</p>
+    <p class="text-base text-gray-700 dark:text-gray-300">ログイン後、ご自身のQiita情報を登録できます</p>
+  </div>
+</div>
+
+
+<div class="navbar">
+  <div class="navbar-start">
+  </div>
+  <div class="navbar-center">
+    <p class="text-gray-700 dark:text-gray-300">&copy; <%= Time.now.year %> らんてくん おすすめ記事</p>
+  </div>
+  <div class="navbar-end">
+  </div>
+</div>
