@@ -11,5 +11,12 @@
       <%= image_tag 'github.png', style: 'height: 36px; width: 36px;' %>
       GitHub Login
     </button>
+    <ul>
+      <% if user_signed_in? %>
+        <li><%= link_to 'Logout', destroy_user_session_path, method: :delete %></li>
+      <% else %>
+        <li><%= link_to 'Sign in with GitHub', user_github_omniauth_authorize_path %></li>
+      <% end %>
+    </ul>
   </div>
 </div>
